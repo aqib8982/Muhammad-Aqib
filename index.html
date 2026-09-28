@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muhammad Aqib Khan | Digital Marketer</title>
+<meta name="description" content="Muhammad Aqib Khan runs social media accounts and paid ads on Meta, TikTok and LinkedIn for brands, universities and founders.">
+<meta property="og:title" content="Muhammad Aqib Khan | Digital Marketer">
+<meta property="og:description" content="I run social accounts and the ads behind them. Meta, TikTok, LinkedIn.">
+<meta property="og:image" content="aqib.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22%2307122b%22/><text x=%2250%22 y=%2268%22 font-size=%2256%22 text-anchor=%22middle%22 fill=%22%23b6ff2e%22 font-family=%22Arial%22 font-weight=%22900%22>A</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#07122b; --ink-2:#0c1c3f; --teal:#0f3d3b; --line:#1f3357;
+  --lime:#b6ff2e; --paper:#eef3ea; --muted:#9fb0c6;
+  --display:"Unbounded", "Arial Black", system-ui, sans-serif;
+  --body:"Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --wrap:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--paper);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--lime);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:10;background:rgba(7,18,43,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{font-family:var(--display);font-weight:700;font-size:15px;text-decoration:none;letter-spacing:.02em}
+.brand span{color:var(--lime)}
+.nav ul{display:flex;gap:28px;list-style:none;align-items:center}
+.nav ul a{text-decoration:none;color:var(--muted);font-size:15px;font-weight:500}
+.nav ul a:hover{color:var(--paper)}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;font-size:15px;padding:12px 20px;border-radius:999px;border:1.5px solid var(--paper);transition:background .2s,color .2s}
+.btn:hover{background:var(--paper);color:var(--ink)}
+.btn.solid{background:var(--lime);border-color:var(--lime);color:var(--ink)}
+.btn.solid:hover{background:var(--paper);border-color:var(--paper)}
+.nav .btn{padding:9px 16px;font-size:14px}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:radial-gradient(900px 600px at 20% 0%,#1d4a2a 0%,transparent 60%),radial-gradient(800px 600px at 90% 90%,#0e2f6b 0%,transparent 60%),var(--ink)}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .85fr;gap:48px;align-items:end;padding-top:72px}
+.hero-copy{padding-bottom:72px}
+.kicker{color:var(--lime);font-weight:700;font-size:15px;margin-bottom:22px}
+h1{font-family:var(--display);font-weight:900;font-size:clamp(40px,6.4vw,84px);line-height:.98;letter-spacing:-.02em}
+.hero p.lead{margin-top:26px;font-size:20px;color:#d3ddd0;max-width:34ch}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
+.hero-photo{align-self:end;position:relative}
+.hero-photo img{width:100%;max-width:440px;margin-left:auto;border-radius:28px 28px 0 0}
+.stats{border-top:1px solid var(--line);background:rgba(7,18,43,.6)}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:28px 0 30px;border-left:1px solid var(--line);padding-left:24px}
+.stat:first-child{border-left:0;padding-left:0}
+.stat b{display:block;font-family:var(--display);font-size:38px;font-weight:700;line-height:1}
+.stat span{color:var(--muted);font-size:15px}
+
+/* logos */
+.logos{background:#fff;padding:26px 0}
+.logos img{margin:0 auto;max-width:900px;width:100%}
+
+/* sections */
+section.block{padding:110px 0}
+h2{font-family:var(--display);font-weight:700;font-size:clamp(30px,4vw,48px);line-height:1.08;letter-spacing:-.01em;max-width:18ch}
+.sub{color:var(--muted);margin-top:14px;max-width:56ch}
+
+/* services */
+.svc-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:28px;margin-top:52px}
+.svc-group{border:1px solid var(--line);border-radius:22px;padding:30px}
+.svc-group.main{background:linear-gradient(160deg,#123a2a,#0c1c3f)}
+.svc-group h3{font-size:14px;color:var(--lime);font-weight:700;margin-bottom:10px}
+.svc{padding:18px 0;border-top:1px solid rgba(159,176,198,.18)}
+.svc:first-of-type{border-top:0}
+.svc strong{display:block;font-size:19px}
+.svc p{color:var(--muted);font-size:15px}
+
+/* work */
+#work{background:var(--ink-2)}
+.case{display:grid;grid-template-columns:1fr 1.15fr;gap:56px;align-items:center;padding:72px 0;border-top:1px solid var(--line)}
+.case:first-of-type{margin-top:48px}
+.case.flip{grid-template-columns:1.15fr 1fr}
+.case.flip .case-media{order:-1}
+.case h3{font-family:var(--display);font-weight:700;font-size:30px;line-height:1.1}
+.case .role{color:var(--lime);font-weight:700;margin-top:8px;font-size:15px}
+.case p{margin-top:16px;color:#d3ddd0}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.tags li{list-style:none;font-size:13px;font-weight:700;padding:6px 12px;border-radius:999px;background:rgba(182,255,46,.1);color:var(--lime)}
+.fact{margin-top:22px;display:flex;gap:28px;flex-wrap:wrap}
+.fact div b{font-family:var(--display);font-size:28px;display:block;line-height:1.1}
+.fact div span{color:var(--muted);font-size:14px}
+.case-media img{border-radius:18px;border:1px solid var(--line)}
+.gallery{margin-top:18px}
+.gallery a{display:block;border-radius:18px;overflow:hidden}
+.gallery img{transition:transform .4s}
+.gallery a:hover img{transform:scale(1.02)}
+.case-media .cap{font-size:13px;color:var(--muted);margin-top:8px}
+
+/* reviews */
+.rev-grid{columns:2;column-gap:24px;margin-top:52px}
+.rev{break-inside:avoid;margin-bottom:24px;border:1px solid var(--line);border-radius:22px;padding:28px;background:var(--ink-2)}
+.stars{color:var(--lime);letter-spacing:3px;font-size:15px}
+.rev blockquote{font-size:19px;line-height:1.5;margin-top:12px}
+.rev .meta{margin-top:16px;font-size:14px;color:var(--muted)}
+.rev .meta b{color:var(--paper);display:block;font-weight:700}
+
+/* contact */
+.contact{background:radial-gradient(700px 500px at 10% 100%,#1d4a2a 0%,transparent 65%),var(--ink);border-top:1px solid var(--line)}
+.contact .wrap{padding-top:110px;padding-bottom:110px}
+.contact h2{font-size:clamp(38px,6vw,76px);font-weight:900;max-width:none;line-height:1}
+.contact .sub{font-size:19px;color:#d3ddd0}
+.links{display:grid;gap:12px;margin-top:36px;max-width:560px}
+.links a{display:flex;justify-content:space-between;align-items:center;gap:16px;text-decoration:none;padding:18px 22px;border:1px solid var(--line);border-radius:16px;transition:border-color .2s,background .2s}
+.links a:hover{border-color:var(--lime);background:rgba(182,255,46,.06)}
+.links small{color:var(--muted);font-size:13px;display:block}
+.links strong{font-size:17px;word-break:break-all}
+.links .go{color:var(--lime);font-weight:700;flex:none}
+.contact-photo img{border-radius:24px;max-width:360px;margin-left:auto}
+footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+@media (max-width:900px){
+  .nav ul li.hide-sm{display:none}
+  .hero .wrap,.case,.svc-grid,.contact .wrap{grid-template-columns:1fr}
+  .hero-copy{padding-bottom:0}
+  .hero-photo img{margin:0 auto;max-width:360px}
+  .stats .wrap{grid-template-columns:repeat(2,1fr)}
+  .stat:nth-child(3){border-left:0;padding-left:0}
+  .stat{padding:20px 0 20px 20px}
+  .case.flip{grid-template-columns:1fr}
+  .case.flip .case-media{order:0}
+  .case{gap:28px;padding:52px 0}
+  .rev-grid{columns:1}
+  .contact-photo{display:none}
+  section.block{padding:80px 0}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="#top">Aqib Khan<span>.</span></a>
+    <ul>
+      <li class="hide-sm"><a href="#services">Services</a></li>
+      <li class="hide-sm"><a href="#work">Work</a></li>
+      <li class="hide-sm"><a href="#reviews">Reviews</a></li>
+      <li><a class="btn solid" href="#contact">Let's talk</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-copy">
+      <p class="kicker">Muhammad Aqib Khan, digital marketer in Korea</p>
+      <h1>I run social accounts and the ads behind them.</h1>
+      <p class="lead">Meta, TikTok and LinkedIn, for brands that need a steady presence and real numbers behind it.</p>
+      <div class="ctas">
+        <a class="btn solid" href="#work">See my work</a>
+        <a class="btn" href="mailto:kaqib8982@gmail.com">Email me</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="aqib.jpg" width="660" height="993" alt="Muhammad Aqib Khan in a navy blazer">
+    </div>
+  </div>
+  <div class="stats">
+    <div class="wrap">
+      <div class="stat"><b>10+</b><span>Clients served</span></div>
+      <div class="stat"><b>30+</b><span>Social handles run</span></div>
+      <div class="stat"><b>10+</b><span>Client events covered</span></div>
+      <div class="stat"><b>5.0</b><span>Average client rating</span></div>
+    </div>
+  </div>
+</header>
+
+<div class="logos" aria-label="Brands I have worked with">
+  <div class="wrap"><img src="logos.jpg" width="1200" height="93" alt="WeAreCareer, AI Suretech, KUAC, ZIRAAN, Kyungdong University and Basil Pizza logos"></div>
+</div>
+
+<section class="block" id="services">
+  <div class="wrap">
+    <h2>What I can take off your plate</h2>
+    <p class="sub">I plan the posts, build the content in Canva, and put ad spend behind what works, so the audience grows and the enquiries come in.</p>
+    <div class="svc-grid">
+      <div class="svc-group main">
+        <h3>Marketing</h3>
+        <div class="svc"><strong>Social media management</strong><p>Your accounts run every week: posting, replies, reviews and profile upkeep.</p></div>
+        <div class="svc"><strong>Social media marketing</strong><p>Content plans and campaigns built around what your audience actually responds to.</p></div>
+        <div class="svc"><strong>Performance marketing</strong><p>Paid campaigns on Meta, TikTok and LinkedIn, tested and adjusted on real results.</p></div>
+        <div class="svc"><strong>Affiliate marketing on Reddit and Quora</strong><p>Useful posts inside communities where normal ads get deleted.</p></div>
+      </div>
+      <div class="svc-group">
+        <h3>Support</h3>
+        <div class="svc"><strong>Executive support</strong><p>Inbox, calendar, documents and the admin that slows founders down.</p></div>
+        <div class="svc"><strong>Community coordination</strong><p>Keeping members, followers and partners engaged and answered.</p></div>
+        <div class="svc"><strong>Virtual assistance</strong><p>Reliable day-to-day help for coaches and small teams.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="work">
+  <div class="wrap">
+    <h2>Selected work</h2>
+    <p class="sub">Universities, a career coaching agency, retail brands, a restaurant, and my own fragrance label.</p>
+
+    <article class="case">
+      <div>
+        <h3>KUAC, Korean Universities Admission Center</h3>
+        <p class="role">Digital marketer</p>
+        <p>I run KUAC's social channels and admissions campaigns, recruiting international students for partner universities like Kyungdong University, Korean Bible University and Catholic Kwandong University.</p>
+        <ul class="tags"><li>Meta Ads</li><li>TikTok Ads</li><li>LinkedIn</li><li>Campaign creatives</li></ul>
+        <div class="fact"><div><b>43K</b><span>Facebook followers</span></div><div><b>350+</b><span>Posts published</span></div></div>
+      </div>
+      <div class="case-media">
+        <img src="kuac.jpg" width="1663" height="802" alt="KUAC student portal and Facebook page" loading="lazy">
+        <div class="gallery"><a href="kuac-grid.jpg" target="_blank" rel="noopener"><img src="kuac-grid.jpg" width="1655" height="1005" alt="KUAC admissions posters for Korean universities" loading="lazy"></a></div>
+      </div>
+    </article>
+
+    <article class="case flip">
+      <div>
+        <h3>Prof. John Kyu Lee</h3>
+        <p class="role">President, Kyungdong University Global</p>
+        <p>I manage and grow the President's social media presence: personal branding, leadership messages, academic news and university activities across his SNS platforms.</p>
+        <ul class="tags"><li>Personal branding</li><li>LinkedIn</li><li>Leadership content</li></ul>
+      </div>
+      <div class="case-media">
+        <img src="jkl.jpg" width="963" height="704" alt="Prof. John Kyu Lee at his desk" loading="lazy">
+      </div>
+    </article>
+
+    <article class="case">
+      <div>
+        <h3>WeAreCareer</h3>
+        <p class="role">Social lead and community coordinator</p>
+        <p>I handle every channel they have: Instagram, Facebook, LinkedIn, YouTube and the review pages. I also run their affiliate marketing inside Reddit communities, and I mapped their competitors across four service lines.</p>
+        <ul class="tags"><li>All social channels</li><li>Reddit affiliate</li><li>Competitor research</li></ul>
+      </div>
+      <div class="case-media">
+        <img src="wearecareer.jpg" width="1116" height="815" alt="WeAreCareer website homepage" loading="lazy">
+      </div>
+    </article>
+
+    <article class="case flip">
+      <div>
+        <h3>ZIRAAN Fragrances</h3>
+        <p class="role">Founder, since 2022</p>
+        <p>My own fragrance brand. I did the branding, product shots, ads and the Shopify store, and ran every social channel myself.</p>
+        <ul class="tags"><li>Branding</li><li>Meta Ads</li><li>Shopify</li><li>Instagram</li></ul>
+        <div class="fact"><div><b>6,300</b><span>Instagram followers</span></div><div><b>100+</b><span>Posts</span></div></div>
+      </div>
+      <div class="case-media">
+        <img src="ziraan.jpg" width="1188" height="762" alt="ZIRAAN best seller for women ad" loading="lazy">
+        <div class="gallery"><a href="ziraan-grid.jpg" target="_blank" rel="noopener"><img src="ziraan-grid.jpg" width="1707" height="805" alt="ZIRAAN fragrance ad creatives" loading="lazy"></a></div>
+      </div>
+    </article>
+
+    <article class="case">
+      <div>
+        <h3>Kreatr</h3>
+        <p class="role">Social media manager</p>
+        <p>A UK brand selling gear to content creators. I managed their Facebook, Instagram, TikTok and LinkedIn with consistent brand messaging and regular engagement.</p>
+        <ul class="tags"><li>Facebook</li><li>Instagram</li><li>TikTok</li><li>LinkedIn</li></ul>
+      </div>
+      <div class="case-media">
+        <img src="kreatr.jpg" width="1451" height="755" alt="Kreatr website and Instagram profile" loading="lazy">
+        <div class="gallery"><a href="kreatr-grid.jpg" target="_blank" rel="noopener"><img src="kreatr-grid.jpg" width="1708" height="910" alt="Kreatr product post creatives" loading="lazy"></a></div>
+      </div>
+    </article>
+
+    <article class="case flip">
+      <div>
+        <h3>Basil Pizza</h3>
+        <p class="role">Social media manager, Garfield NJ</p>
+        <p>I handled Facebook, Instagram and TikTok for a local pizza restaurant, including a weekly series promoting their $9.99 daily lunch specials.</p>
+        <ul class="tags"><li>Facebook</li><li>Instagram</li><li>TikTok</li><li>Local promos</li></ul>
+      </div>
+      <div class="case-media">
+        <img src="basil.jpg" width="1155" height="894" alt="Basil Pizza daily lunch specials post" loading="lazy">
+        <div class="gallery"><a href="basil-grid.jpg" target="_blank" rel="noopener"><img src="basil-grid.jpg" width="1697" height="831" alt="Basil Pizza weekly lunch special posts" loading="lazy"></a></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="block" id="reviews">
+  <div class="wrap">
+    <h2>What clients say</h2>
+    <p class="sub">Five-star reviews from my Upwork clients.</p>
+    <div class="rev-grid">
+      <figure class="rev">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>"Muhammad is one of the most reliable assistants I've worked with. He handled my personal and professional administrative tasks with absolute precision and great communication. He's much more than just an assistant; he's a true partner in keeping operations running smoothly. Five stars aren't enough!"</blockquote>
+        <figcaption class="meta"><b>CV customisation</b>Oct 2025 to Mar 2026</figcaption>
+      </figure>
+      <figure class="rev">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>"Muhammad was great to work with. He helped us set up our social media accounts and kept everything organized. Communication was easy, he delivered everything on time, and the quality of his work was exactly what we were looking for. We'd definitely work with him again."</blockquote>
+        <figcaption class="meta"><b>Social media setup, competitor research and strategy</b>Aug 2026</figcaption>
+      </figure>
+      <figure class="rev">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>"Great experience with Aqib. He is a strong, diligent individual and a good virtual assistant. He speaks and communicates well. I would recommend him if you're looking for a good VA."</blockquote>
+        <figcaption class="meta"><b>Forum affiliate marketing</b>Jun 2026</figcaption>
+      </figure>
+      <figure class="rev">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>"Great collaboration. Communication was smooth and was a pleasure to work with."</blockquote>
+        <figcaption class="meta"><b>Forum affiliate marketing</b>Dec 2025 to Jul 2026</figcaption>
+      </figure>
+      <figure class="rev">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>"Good resource. I would definitely recommend."</blockquote>
+        <figcaption class="meta"><b>Data entry and social media for a health app</b>Oct 2025</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div>
+      <h2>Let's grow your business.</h2>
+      <p class="sub">Tell me what you're posting now and I'll tell you what I'd change.</p>
+      <div class="links">
+        <a href="mailto:kaqib8982@gmail.com"><span><small>Email</small><strong>kaqib8982@gmail.com</strong></span><span class="go">Write</span></a>
+        <a href="https://wa.me/821024607914" target="_blank" rel="noopener"><span><small>WhatsApp</small><strong>+82 10 2460 7914</strong></span><span class="go">Chat</span></a>
+        <a href="https://www.linkedin.com/in/muhammad-aqib-khan-01b7a4254" target="_blank" rel="noopener"><span><small>LinkedIn</small><strong>muhammad-aqib-khan</strong></span><span class="go">Connect</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap"><span>© 2026 Muhammad Aqib Khan</span><span>BBA silver medalist, Master's in International Business in Korea</span></div>
+</footer>
+
+</body>
+</html>
